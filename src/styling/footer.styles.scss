@@ -1,0 +1,61 @@
+.footer {
+  min-height: 280px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  &--border {
+    height: 1px;
+    width: 100%;
+    background: #9d9d9d;
+  }
+
+  .cookies {
+    &--text {
+      font-size: 14px;
+      font-weight: 500;
+      color: #231f20;
+      font-family: "ubuntu", sans-serif;
+    }
+
+    &--page {
+      color: #4ead8f;
+    }
+
+    &__container {
+      position: relative;
+
+      .close--btn {
+        position: absolute;
+        right: 0;
+        top: 0;
+        background: transparent;
+        border: none;
+        cursor: pointer;
+        width: 18px;
+      }
+
+      .accept--btn {
+        font-family: "ubuntu", sans-serif;
+        background: #395f8c;
+        border: none;
+        color: #fff;
+        padding: 15px 30px;
+        transition: background 0.3s;
+
+        &:hover {
+          background: #263f5e;
+        }
+      }
+    }
+  }
+
+  &--links {
+    .link {
+      color: #3d3d3d;
+      font-family: "ubuntu", sans-serif;
+      font-weight: 400;
+    }
+  }
+}

@@ -1,0 +1,243 @@
+/* Importing fonts */
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700;800;900&family=Ubuntu:wght@300;400;500;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap");
+
+.h1,
+.h2,
+.h3,
+.h4,
+.h5,
+.h6 {
+  font-family: "Ubuntu", sans-serif;
+  color: #2e2e2e;
+}
+
+.h1 {
+  font-weight: 700;
+}
+
+p {
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background: #f0f7ff;
+}
+
+.network__banner-section {
+  background: linear-gradient(to bottom, #4dad90 80%, #f0f7ff 20%);
+}
+
+.banner__image-wrapper {
+  padding: 80px 50px 0;
+  position: relative;
+}
+
+.network__banner-heading {
+  position: absolute;
+  bottom: 8%;
+  left: 12%;
+  font-size: 60px;
+  max-width: 700px;
+}
+
+.banner__blue-box {
+  background: #395f8c;
+  height: 70px;
+  width: 70px;
+  position: absolute;
+  bottom: 25%;
+  left: 2.5%;
+}
+
+.guidance-section {
+  margin: 120px 0 50px;
+}
+
+.guidance-card:last-of-type {
+  margin-top: 80px;
+}
+
+.guidance-rectangle__image-wrapper img {
+  height: 60px;
+  margin-top: 10px;
+}
+
+/* .guidance__image-wrapper {
+    width: 400px;
+    margin: 0 auto;
+} */
+
+.guidance__image-wrapper img {
+  width: 100%;
+  border-radius: 5px;
+}
+
+.network-form {
+  background: #efefef;
+  padding: 50px 0 100px;
+}
+
+.network-form .form-title {
+  font-weight: 700;
+}
+
+.network-form form {
+  padding: 0 100px;
+}
+
+.network-form form label {
+  font-family: "Ubuntu", sans-serif;
+  font-weight: 500;
+  font-size: 18px;
+}
+
+.network-form form .form-control {
+  padding: 14px 12px;
+  font-family: "Poppins", sans-serif;
+  color: #495057;
+}
+
+.network-form form .form-control::placeholder {
+  color: #a4a7ab;
+  opacity: 1;
+}
+
+.network-form form .form-control:-ms-input-placeholder {
+  color: #a4a7ab;
+}
+
+.network-form form .form-control::-ms-input-placeholder {
+  color: #a4a7ab;
+}
+
+.network-form form .form-control:focus {
+  box-shadow: none;
+  border: 1px solid #ced4da;
+}
+
+.network-form form .form-check-label {
+  font-weight: 400;
+  font-family: "Poppins", sans-serif;
+  margin-left: 30px;
+}
+
+.network-form form .form-check-input {
+  width: 40px;
+  height: 22px;
+}
+
+.network-form form .form-check-input:checked {
+  background-color: #3a416ff2;
+  border-color: #3a416ff2;
+}
+
+.network-form form .form-submit-btn {
+  background: linear-gradient(135deg, #395f8c 0%, #305888 100%);
+  font-family: "Poppins", sans-serif;
+  padding: 12px 20px;
+  min-width: 400px;
+  transition: opacity 0.3s ease;
+}
+
+.network-form form .form-submit-btn:hover {
+  opacity: 0.9;
+}
+
+@media screen and (max-width: 992px) {
+  .container {
+    max-width: 95%;
+  }
+
+  .network__banner-heading {
+    font-size: 40px;
+    width: auto;
+  }
+
+  .banner__blue-box {
+    height: 60px;
+    width: 60px;
+    bottom: 10%;
+    left: 3.5%;
+  }
+
+  .guidance-section {
+    margin: 90px 0 50px;
+  }
+
+  .guidance-card:last-of-type {
+    margin-top: 40px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .banner__image-wrapper {
+    padding: 80px 0px 0;
+  }
+
+  .network__banner-heading {
+    left: 7%;
+    bottom: 2%;
+    font-size: 36px;
+  }
+
+  .banner__blue-box {
+    height: 50px;
+    width: 50px;
+    bottom: 4%;
+    left: -1.5%;
+  }
+
+  .guidance-section {
+    margin: 70px 0 50px;
+  }
+
+  .network-form {
+    background: #efefef;
+    padding: 15px 0 70px;
+  }
+
+  .network-form form {
+    padding: 0 20px;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .banner__image-wrapper img {
+    padding: 0;
+    height: 280px;
+    object-fit: cover;
+  }
+
+  .network-form form {
+    padding: 0;
+  }
+
+  .network__banner-heading {
+    bottom: 1%;
+    left: 0%;
+    font-size: 30px;
+  }
+
+  .banner__blue-box {
+    display: none;
+  }
+
+  .guidance-rectangle__image-wrapper img {
+    height: 45px;
+  }
+
+  .network-form form .form-submit-btn {
+    min-width: 200px;
+  }
+
+  .network-form form .form-check-label {
+    margin-left: 15px;
+    font-size: 16px;
+  }
+}

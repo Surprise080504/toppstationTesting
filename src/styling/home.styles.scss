@@ -1,0 +1,163 @@
+.hero-bg {
+  right: 0;
+  top: -30%;
+  z-index: -1;
+
+  @media only screen and (max-width: 425px) {
+    width: 100% !important;
+  }
+}
+
+.see-more-sources-outer {
+  .see-more-btn {
+    border: 1px solid #395f8c;
+    padding: 1rem 2rem;
+
+    a {
+      color: #395f8c;
+      display: flex;
+      gap: 2rem;
+      font-weight: 500;
+      font-family: "inter";
+    }
+  }
+}
+
+.blog-card__container {
+  .row-gap {
+    gap: 30px 0;
+  }
+
+  .title-bg {
+    max-width: 30px;
+    max-height: 55px;
+    width: 100%;
+    height: 100%;
+  }
+
+  .card-tag {
+    background: #283a61;
+    color: #fff;
+    font-size: 13px;
+    padding: 3px 10px;
+    border-radius: 4px;
+    font-family: "Roboto", sans-serif;
+    margin-right: 3px;
+  }
+
+  .heading-3 {
+    color: #161b3d;
+    font-family: "Inter", sans-serif;
+    font-weight: 600;
+    line-height: 1.4;
+  }
+
+  .card-date {
+    color: #515151;
+    font-size: 14px;
+    font-family: "Inter", sans-serif;
+  }
+
+  .card-text {
+    color: #434343;
+    font-family: "Roboto", sans-serif;
+  }
+
+  .btn {
+    color: #395f8c;
+    padding: 15px 30px;
+    border: 1px solid #395f8c;
+    width: max-content;
+    font-family: "Inter", sans-serif;
+    transition: all 0.3s ease-in-out;
+
+    @media only screen and (max-width: 600px) {
+      padding: 10px;
+      font-size: 14px;
+    }
+
+    &:hover {
+      background: #395f8c;
+      color: #fff;
+    }
+
+    i {
+      transition: transform 0.3s ease-in-out;
+    }
+
+    &:hover i {
+      transform: translateX(10px);
+    }
+  }
+}
+
+.highlighted__container {
+  background: linear-gradient(
+    180deg,
+    rgba(227, 244, 255, 0.15) -3.19%,
+    #e3f4ff 58.95%,
+    rgba(227, 244, 255, 0.29) 95.41%
+  );
+
+  .heading-3 {
+    font-family: "Inter", sans-serif;
+    font-weight: 700;
+    line-height: 1.4;
+    color: #000;
+  }
+
+  figure {
+    margin: 0;
+  }
+
+  .paragraph {
+    color: #58616f;
+    font-family: "Inter", sans-serif;
+  }
+
+  .cta {
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 500;
+    background: #802217;
+    color: #fff;
+    border: 1px solid transparent;
+    transition: all 0.3s ease-in-out;
+
+    &:hover {
+      color: #802217;
+      background: transparent;
+      border: 1px solid #802217;
+    }
+  }
+}
+
+.dotted-border {
+  width: 100%;
+  border-bottom: 1px dashed #395f8c;
+}
+
+.section-bg {
+  right: 10%;
+  bottom: -10px;
+  max-width: 250px;
+}
+
+.star-bg,
+.star-bg-2 {
+  max-width: 50px;
+  z-index: -1;
+}
+
+.star-bg {
+  top: 0;
+  right: 40px;
+}
+
+.star-bg-2 {
+  top: 48px;
+  right: 0;
+}
+
+.bg-light-shade {
+  background: #f8fbff;
+}

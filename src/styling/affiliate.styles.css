@@ -1,0 +1,37 @@
+body,
+.heading-1 {
+  background-color: #f0f7ff;
+  font-family: "Ubuntu", sans-serif;
+}
+
+.affiliate-page .heading-1 {
+  overflow-wrap: normal;
+}
+
+.affiliate-page .heading-1,
+.affiliate-page .subtitle {
+  color: #333434;
+}
+
+.affiliate-page .heading-2 {
+  color: #000;
+}
+
+.affiliate-page .paragraph {
+  color: #484848;
+  font-size: 18px;
+}
+
+.affiliate-page .paragraph.p-light {
+  color: #5b5b5b;
+  font-size: 16px;
+}
+
+.affiliate-page .about--link {
+  background: #395f8c;
+  font-weight: 500;
+}
+
+.affiliate-page .p-link {
+  color: #5fb39c;
+}

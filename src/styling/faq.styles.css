@@ -1,0 +1,29 @@
+body {
+  background: #e5e5e5;
+  font-family: "Ubuntu", sans-serif;
+}
+
+.faq-page .faq__container .accordion-header {
+  font-family: "Ubuntu", sans-serif;
+}
+
+.faq-page .faq__container .accordion-header button {
+  font-size: 18px;
+}
+
+.faq-page .heading-1 {
+  font-size: clamp(26px, 5vw, 50px);
+}
+
+.faq-page .circle {
+  background: #4dad90;
+}
+
+.faq__container .accordion-button,
+.faq__container .accordion-body {
+  border-color: #4dad90;
+}
+
+.faq__container .faq-page img {
+  width: 40px;
+}

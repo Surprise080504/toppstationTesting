@@ -1,0 +1,212 @@
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700;800;900&family=Ubuntu:wght@300;400;500;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap");
+
+.h1,
+.h2,
+.h3,
+.h4,
+.h5,
+.h6 {
+  font-family: "Ubuntu", sans-serif;
+  color: #373737;
+}
+
+
+.textElement p{
+  margin-bottom: 30px;
+}
+.textElement h1, 
+.textElement h2,
+.textElement h3,
+.textElement h4,
+.textElement h5,
+.textElement ul,
+.textElement ol,
+.textElement h6{
+  margin-bottom: 40px;
+}
+
+.textElement ul,
+.textElement ol{
+  margin-top: 20px;
+}
+
+.coverImageContainer{
+  max-height: 600px;
+    text-align: center;
+}
+.coverImage{
+  height: 100%;
+  margin: auto;
+}
+.blog-page p {
+  color: #5b5b5b;
+  font-family: "Ubuntu", sans-serif;
+}
+
+.font-poppins {
+  font-family: "Poppins", sans-serif;
+}
+
+.font-ubuntu {
+  font-family: "Ubuntu", sans-serif;
+}
+
+body {
+  background: #f0f7ff;
+}
+
+.user-name__wrapper .h5,
+.user-name__wrapper {
+  color: #565b61;
+}
+
+.user-name__wrapper .h5,
+.user-name__wrapper .posted-date {
+  font-family: "Ubuntu", sans-serif;
+  font-weight: 500;
+}
+
+.blog-data .h1,
+.blog-data .h2,
+.post-writer__data .h3,
+.related-topics .h2,
+.card-title,
+.popular-blog-posts .h2 {
+  font-family: "Ubuntu", sans-serif;
+}
+
+.blog .social-icon__wrapper {
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  text-align: center;
+  line-height: 20px;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+.blog .social-icon__wrapper img {
+  height: 18px;
+  width: 18px;
+  object-fit: contain;
+  margin: auto;
+}
+
+.blog-data .start-btn {
+  background: #4dad90;
+  padding: 15px 20px;
+  font-family: "Ubuntu", sans-serif;
+  transition: opacity 0.3s ease;
+}
+
+.blog-data .start-btn:hover {
+  opacity: 0.9;
+}
+
+.post-writer__data .container .row,
+.tip-wrapper .container .row {
+  background: #802217;
+  margin: 80px 0;
+}
+
+.tip-head img {
+  width: 30px;
+  height: 30px;
+  object-fit: contain;
+}
+
+.tip-head h3 {
+  font-family: "Poppins", sans-serif;
+}
+
+.post-writer__data .writer-job {
+  color: #a0ffe2;
+}
+
+.related-topics .related-topics__btn {
+  color: #395f8c;
+  border: 2px solid #395f8c;
+  padding: 10px 20px;
+  font-weight: 600;
+  font-family: "Inter", sans-serif;
+  transition: all 0.3s ease;
+}
+
+.related-topics .related-topics__btn:hover {
+  background: #395f8c !important;
+  color: #fff;
+}
+
+.popular-blog-posts {
+  margin: 70px 0;
+}
+
+.ctaButton{
+  margin-top: 100px!important;
+}
+
+.popular-blog-posts .popular-blog-posts__card .card-tag {
+  background: #4dad90;
+  padding: 5px 10px;
+  display: inline-block;
+  font-family: "Roboto", sans-serif;
+  margin-right: 5px;
+}
+
+.popular-blog-posts .popular-blog-posts__card .card-title {
+  color: #161b3d;
+}
+
+.popular-blog-posts .popular-blog-posts__card .card-text.card-date {
+  color: #515151;
+}
+
+.popular-blog-posts .popular-blog-posts__card .card-text {
+  color: #434343;
+}
+
+.card-image{
+  height: 200px;
+  display: flex;
+}
+
+@media screen and (max-width: 992px) {
+  .container {
+    max-width: 95%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .blog .user-thumbnail {
+    width: 60px;
+    height: 60px;
+    object-fit: contain;
+  }
+
+  .user-name__wrapper .user-name {
+    font-size: 16px;
+  }
+
+  .user-name__wrapper .posted-date {
+    font-size: 14px;
+  }
+
+  .related-topics .related-topics__btn {
+    padding: 10px 16px;
+  }
+}
+
+.card-tag{
+  background: #283a61;
+    color: #fff;
+    font-size: 13px;
+    padding: 3px 10px;
+    border-radius: 4px;
+    font-family: "Roboto", sans-serif;
+    margin-right: 3px;
+}

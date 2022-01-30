@@ -1,0 +1,268 @@
+/* Typography */
+body.limited-liability-page,
+.limited-liability-page .heading-1,
+.limited-liability-page .heading-2,
+.limited-liability-page .heading-3,
+.limited-liability-page .heading-4,
+.hero__container .subtitle {
+  font-weight: 700;
+  font-family: "Ubuntu", sans-serif;
+}
+
+.limited-liability-page .heading-2 {
+  font-size: clamp(28px, 4vw, 36px);
+}
+
+.reasons__container .heading-4,
+.limited-liability-page .heading-2 {
+  color: #000;
+}
+
+.hero__container .heading-1,
+.hero__container .subtitle {
+  color: #161b3d;
+}
+
+.hero__container .subtitle {
+  font-size: 18px;
+  font-weight: 400;
+}
+
+.heading-4 {
+  font-weight: 700;
+}
+
+.reasons__container .paragraph {
+  color: #4b4b4b;
+  font-weight: 400;
+}
+
+/* Hero section */
+.hero__container {
+  background-color: #f0f7ff;
+}
+
+.hero__container .hero--btn {
+  color: #fff;
+  font-size: 16px;
+  font-weight: 500;
+  background: #395f8c;
+  border-radius: 200px;
+  padding: 10px 20px;
+  border: 1px solid transparent;
+  transition: background 0.3s ease-in-out, border 0.3s ease-in-out,
+    color 0.3s ease-in-out;
+}
+
+.hero__container .hero--btn:hover {
+  background: transparent;
+  border: 1px solid #395f8c;
+  color: #395f8c;
+}
+
+/* Reasons Section */
+.reasons__container figure {
+  background: #82211a;
+  border-radius: 10px;
+}
+
+.reasons__container figure img {
+  width: 25px;
+}
+
+/* Process Section */
+.process__container {
+  background: #e5e5e5;
+}
+
+.process__container .heading-2,
+.faq__container .heading-2 {
+  color: #1d3444;
+}
+
+.process__container .paragraph {
+  font-weight: 500;
+  color: #4e4c4c;
+  font-size: clamp(20px, 3vw, 30px);
+}
+
+/* Stats section */
+.stats__container {
+  background: #4ead8f;
+  color: #fff;
+}
+
+.stats__container .paragraph {
+  font-weight: 400;
+}
+
+.stats__container .heading-4 {
+  font-weight: 500;
+}
+
+/* FAQ Section */
+.faq__container {
+  background: #e5e5e5;
+}
+
+.faq__container .heading-3 {
+  color: #000;
+}
+
+.faq__container .accordion-item {
+  margin-bottom: 1rem;
+  background: transparent;
+  border: none;
+}
+
+.faq__container .accordion-button {
+  color: #232323;
+  border-radius: 5px;
+}
+
+.faq__container .accordion-body {
+  color: #5b5b5b;
+  font-weight: 400;
+  padding-top: 0;
+}
+
+.faq__container .accordion-body {
+  border-bottom-left-radius: 5px;
+}
+
+.accordion-item .accordion-header.active .accordion-button {
+  border-bottom-left-radius: 0;
+}
+
+.faq__container .accordion-button,
+.faq__container .accordion-body {
+  padding-left: 16px;
+  background: #e5e5e5;
+  box-shadow: none;
+  border-left: 3px solid #395f8c;
+}
+
+.faq__container .accordion-header {
+  font-weight: 500;
+}
+
+.faq__container .accordion-button::after {
+  background-image: url("../../public/images/chevreon.png");
+  transform: rotate(0);
+}
+
+.faq__container .active .accordion-button::after {
+  transform: rotate(180deg);
+}
+
+.circle {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: #395f8c;
+}
+
+.faq--link {
+  font-family: "Poppins", sans-serif;
+  text-decoration: underline;
+  font-weight: 600;
+  color: #395f8c;
+}
+
+/* Reviews container */
+.reviews-container {
+  background: #efefef;
+}
+
+.reviews-container .heading-2 {
+  color: #1d3444;
+}
+
+.reviews-container .image-container {
+  margin: 0;
+}
+
+.reviews-container .image-container img {
+  width: 15px;
+}
+
+.reviews-container .paragraph {
+  font-weight: 400;
+  font-size: 16px;
+}
+
+.reviews-container img {
+  width: 15px;
+}
+
+.reviews-container .details img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+}
+
+.reviews-container .details .heading-5 {
+  font-size: 14px;
+  color: #2f2e41;
+  font-weight: 700;
+  margin: 0;
+}
+
+.reviews-container .details p {
+  font-size: 12px;
+  font-weight: 400;
+  margin: 0;
+}
+
+.reviews-container .review {
+  font-weight: 500;
+}
+
+.reviews-container .review span {
+  font-weight: 700;
+}
+
+.reviews-container .swiper-button-prev,
+.reviews-container .swiper-button-next {
+  position: initial;
+  width: 100%;
+  margin: 0;
+  cursor: pointer;
+}
+
+.reviews-container .swiper-button-prev::after,
+.reviews-container .swiper-button-next::after {
+  content: "";
+}
+
+.reviews-container .swiper-button-prev img,
+.reviews-container .swiper-button-next img {
+  width: 30px;
+}
+
+.reviews-container .swiper-button-next .non-hover,
+.reviews-container .swiper-button-prev .hover {
+  transform: rotate(180deg);
+}
+
+.reviews-container .swiper-button-prev .hover,
+.reviews-container .swiper-button-next .hover {
+  display: none;
+}
+
+.reviews-container .swiper-button-prev:hover .non-hover,
+.reviews-container .swiper-button-next:hover .non-hover {
+  display: none;
+}
+
+.reviews-container .swiper-button-prev:hover .hover,
+.reviews-container .swiper-button-next:hover .hover {
+  display: block;
+}
+
+@media only screen and (max-width: 576px) {
+  .reviews-container .swiper-button-prev .hover,
+  .reviews-container .swiper-button-next .hover {
+    width: 30% !important;
+  }
+}

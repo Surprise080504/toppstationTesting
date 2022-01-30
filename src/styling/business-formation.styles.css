@@ -1,0 +1,210 @@
+/* Importing fonts */
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700;800;900&family=Ubuntu:wght@300;400;500;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap");
+
+/* Resetting Default styles */
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Allow percentage-based heights in the application */
+html,
+body {
+  height: 100%;
+}
+
+body {
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+  background: #e5e5e5;
+}
+
+/* Improve media defaults */
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+
+/* Remove built-in form typography styles */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+/* Avoid text overflows */
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+}
+
+/* Same heading color */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: #373737;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  object-fit: cover;
+  
+}
+.card-image .image{
+  height: 100%;
+  margin: auto;
+}
+/* Reuseable classes */
+h1,
+h2,
+.subtitle {
+  font-family: "Poppins", sans-serif;
+}
+
+/* Typography */
+.heading-1 {
+  font-weight: 700;
+  font-size: clamp(32px, 5vw, 50px);
+}
+
+.subtitle .paragraph {
+  color: #525151;
+  font-size: 20px;
+  font-weight: 400;
+}
+
+.heading-2 {
+  font-weight: 600;
+  font-size: clamp(24px, 5vw, 28px);
+}
+
+.heading-3 {
+  font-size: clamp(18px, 5vw, 22px);
+  font-family: "Work Sans", sans-serif;
+  font-weight: 600;
+}
+
+.heading-4 {
+  font-family: "Ubuntu", sans-serif;
+  font-size: 18px;
+  font-weight: 500;
+}
+
+/* Top links */
+.link {
+  font-weight: 500;
+  font-family: "Inter", sans-serif;
+  color: #605c59;
+  font-size: 16px;
+}
+
+.link.active {
+  opacity: 0.7;
+}
+
+/* Blogs */
+.blog {
+  background: #fff;
+}
+
+.blog__details {
+  gap: 10px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+}
+
+.legal-question-main {
+  margin: 0;
+}
+
+.blog .blog__details img {
+  width: 13px;
+  height: auto;
+  object-fit: contain;
+}
+
+.blog__details .detail {
+  gap: 20px;
+  font-size: 14px;
+}
+
+.blogs .paragraph {
+  color: #7b7b7b;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.blogs .blog-link {
+  background: #4ead8f;
+  border-radius: 30px;
+  color: #fff;
+  font-family: "Work Sans", sans-serif;
+  font-weight: 500;
+  font-size: 15px;
+  border: 1px solid transparent;
+  transition: background 0.3s ease-in-out, border 0.3s ease-in-out,
+    color 0.3s ease-in-out;
+}
+
+.blogs .blog-link:hover {
+  background: transparent;
+  border: 1px solid #4ead8f;
+  color: #4ead8f;
+}
+
+/* Testimonial */
+.testimonial__container {
+  background: linear-gradient(#c4ece6, #fbd3d3);
+}
+
+.testimonial {
+  font-family: "Ubuntu", sans-serif;
+}
+
+.testimonial .paragraph {
+  font-size: 15px;
+  line-height: 23px;
+  font-weight: 400;
+}
+
+.testimonial .author-img {
+  border-radius: 8px;
+  max-height: 200px;
+  object-fit: cover;
+}
+
+.testimonial .author {
+  font-size: 14px;
+  color: #797979;
+  font-weight: 400;
+}
+
+.testimonial__container .swiper-slide img {
+  width: 100%;
+  object-fit: contain;
+}

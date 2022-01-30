@@ -1,0 +1,91 @@
+body {
+  font-family: "Ubuntu", sans-serif;
+}
+
+.contact-us__hero .heading-1 {
+  color: #444444;
+}
+
+.card__container {
+  width: 100%;
+  top: 55%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.circle {
+  background: #4dad90;
+}
+
+.accordion-header .accordion-button {
+  font-weight: 500;
+  font-size: 18px;
+}
+
+.faq__container .accordion-body {
+  font-size: 16px;
+  margin-top: 0;
+}
+
+.heading-2 {
+  font-size: clamp(28px, 5vw, 36px);
+  font-weight: 700;
+}
+
+.contact-card {
+  background: #fff;
+}
+
+.heading-1,
+.heading-3,
+.heading-2,
+.accordion-header {
+  font-family: "Ubuntu", sans-serif;
+}
+
+.contact-card .heading-3 {
+  color: #2b2a2a;
+}
+
+.contact-card .heading-4 {
+  color: #403f3f;
+}
+
+.contact-us__hero--border {
+  max-width: 50%;
+}
+
+.contact-card .bg {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  top: 0;
+  left: 50%;
+  background: #fff;
+  transform: translate(-50%, -50%);
+  box-shadow: 0px 4px 20px 1px rgba(189, 189, 189, 0.6);
+}
+
+.contact-card .bg svg {
+  width: 50px;
+}
+
+.contact-card .paragraph {
+  margin: 0;
+  color: #555454;
+}
+
+.hero-img {
+  height: calc(100vh + 100px);
+  width: 100%;
+}
+
+@media only screen and (min-width: 767px) {
+  .hero-img {
+    height: auto;
+  }
+
+  .card__container {
+    top: 70%;
+  }
+}

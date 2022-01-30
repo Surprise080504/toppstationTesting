@@ -1,0 +1,39 @@
+.header_new {
+  .header-chat-btn a {
+    border-radius: 10px;
+  }
+
+  @media only screen and (max-width: 767px) {
+    .navbar-brand {
+      width: 42%;
+    }
+  }
+
+  @media only screen and (max-width: 350px) {
+    .navbar-brand {
+      width: 37%;
+    }
+
+    .navbar .container {
+      padding: 0;
+    }
+  }
+
+  .socials-container {
+    a {
+      margin: 0;
+      background: #fff;
+      padding: 10px;
+      border-radius: 50%;
+      width: 35px;
+      height: 35px;
+    }
+
+    @media only screen and (max-width: 767px) {
+      & {
+        width: 100% !important;
+        justify-content: center;
+      }
+    }
+  }
+}
