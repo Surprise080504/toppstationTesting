@@ -4335,8 +4335,23 @@ const Home = props => {
     return status;
   };
 
+  const findIfAdded = (listOfItems, item) => {
+    console.log(listOfItems, item);
+    let status = false;
+    listOfItems.forEach(listOfTags => {
+      console.log(listOfTags);
+      listOfTags.posts.forEach(taggedItem => {
+        console.log(item._id, taggedItem._id);
+        if (item._id == taggedItem._id) return true;else status = false;
+        return;
+      });
+    });
+    return status;
+  };
+
   const createCategories = list => {
-    let categorieslist = [];
+    let categorieslist = []; // let indexesList = [];
+
     list.forEach(item => {
       item.tags.forEach(tag => {
         let indexDefiner = findInCategories(categorieslist, tag);
