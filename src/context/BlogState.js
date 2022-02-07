@@ -1,5 +1,5 @@
 import React, { createContext, useReducer } from 'react';
-import BlogReducer from '../Reducer/BlogReducer';
+import BlogReducer from '../reducers/BlogReducer';
 import axios from 'axios'
 
 const initialState = {
