@@ -166,7 +166,7 @@ const Blog = (props) => {
         </div>
       </section>
       <section className="popular-blog-posts">
-        <div className="container">
+        {categories.posts && categories.posts.length > 0 &&<div className="container">
           <h2 className="h2 my-4">You Might Like</h2>
           <div className="row gap-5 gap-sm-5 gap-md-0">
             {categories.posts && categories.posts.map((post) => {
@@ -190,7 +190,7 @@ const Blog = (props) => {
                 </a>
             })}
           </div>
-        </div>
+        </div>}
       </section>
     </div>
   );
