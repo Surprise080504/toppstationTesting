@@ -42,43 +42,47 @@ const Home = (props) => {
   const findInCategories = (categorieslist, tag) => {
     let status = -1;
     categorieslist.forEach((cat, index) => {
-      if(cat.tag == tag) status = index; 
-    })
+      console.log(cat.tag, tag)
+      if(cat.tag == tag) {
+        return index;
+      }
+    });
     return status;
   }
 
-  const findIfAdded = (listOfItems, item) => {
-    console.log(listOfItems, item)
-    let status = false;
-    listOfItems.forEach((listOfTags) => {
-      console.log(listOfTags)
-      listOfTags.posts.forEach((taggedItem) => {
-        console.log(item._id, taggedItem._id)
-        if(item._id == taggedItem._id) return true;
-        else status = false;
-        return;
-      })
-    })
-    return status
-  }
-  
   const createCategories = (list) => {
     let categorieslist = [];
     // let indexesList = [];
     list.forEach(item => {
-        item.tags.forEach((tag) => {
-          let indexDefiner = findInCategories(categorieslist, tag);
-          if(item.visibility){
-            if(indexDefiner == -1){
-                categorieslist.push({tag: tag, posts: [item]})
-            } else {
-                categorieslist[indexDefiner].posts.push(item);
+        // item.tags.forEach((tag) => {
+          let i = 0;
+            while (i < item.tags.length){
+              let indexDefiner = findInCategories(categorieslist, item.tags[i]);
+              // if(item.visibility){
+              //   console.log(categorieslist, item.tags[i])
+              //   if(categorieslist.length)
+              //   categorieslist.forEach((cat, index) => {
+              //     if(cat.tags.indexOf(item.tags[i]) != -1) {
+              //       categorieslist[index].posts.push(item)
+              //     } else { 
+              //       categorieslist.push({tag: item.tags[i], posts: [item]});
+              //     }
+              //   });
+              // }
+
+              console.log(categorieslist)
+                if(indexDefiner == -1){
+                    categorieslist.push({tag: item.tags[i], posts: [item]});
+                } else {
+                    categorieslist[indexDefiner].posts.push(item);
+                }
+                break;
+              i ++;
             }
-          }
-        });
+        // });
     });
 
-
+    console.log(categorieslist)
 
     const asc = categorieslist.sort((a,b) => {
       return b.posts.length - a.posts.length

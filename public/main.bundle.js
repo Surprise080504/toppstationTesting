@@ -2209,45 +2209,6 @@ const data = [{
 
 /***/ }),
 
-/***/ "./src/Reducer/BlogReducer.js":
-/*!************************************!*\
-  !*** ./src/Reducer/BlogReducer.js ***!
-  \************************************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
-/* harmony export */ });
-/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ((state, action) => {
-  switch (action.type) {
-    case 'BLOGUPDATE_SUCCESS':
-    case 'BLOGSAVE_SUCCESS':
-    case 'BLOG_LOADED':
-      return { ...state,
-        blog: action.payload,
-        error: null
-      };
-
-    case 'BLOGS_LOADED':
-    case 'BLOG_LOADED':
-      return { ...state,
-        blogs: action.payload
-      };
-
-    case 'CLEAR_ERROR':
-      return { ...state,
-        error: null
-      };
-
-    default:
-      return state;
-  }
-});
-
-/***/ }),
-
 /***/ "./src/components/Aboutus.js":
 /*!***********************************!*\
   !*** ./src/components/Aboutus.js ***!
@@ -4330,21 +4291,11 @@ const Home = props => {
   const findInCategories = (categorieslist, tag) => {
     let status = -1;
     categorieslist.forEach((cat, index) => {
-      if (cat.tag == tag) status = index;
-    });
-    return status;
-  };
+      console.log(cat.tag, tag);
 
-  const findIfAdded = (listOfItems, item) => {
-    console.log(listOfItems, item);
-    let status = false;
-    listOfItems.forEach(listOfTags => {
-      console.log(listOfTags);
-      listOfTags.posts.forEach(taggedItem => {
-        console.log(item._id, taggedItem._id);
-        if (item._id == taggedItem._id) return true;else status = false;
-        return;
-      });
+      if (cat.tag == tag) {
+        return index;
+      }
     });
     return status;
   };
@@ -4353,21 +4304,39 @@ const Home = props => {
     let categorieslist = []; // let indexesList = [];
 
     list.forEach(item => {
-      item.tags.forEach(tag => {
-        let indexDefiner = findInCategories(categorieslist, tag);
+      // item.tags.forEach((tag) => {
+      let i = 0;
 
-        if (item.visibility) {
-          if (indexDefiner == -1) {
-            categorieslist.push({
-              tag: tag,
-              posts: [item]
-            });
-          } else {
-            categorieslist[indexDefiner].posts.push(item);
-          }
+      while (i < item.tags.length) {
+        let indexDefiner = findInCategories(categorieslist, item.tags[i]); // if(item.visibility){
+        //   console.log(categorieslist, item.tags[i])
+        //   if(categorieslist.length)
+        //   categorieslist.forEach((cat, index) => {
+        //     if(cat.tags.indexOf(item.tags[i]) != -1) {
+        //       categorieslist[index].posts.push(item)
+        //     } else { 
+        //       categorieslist.push({tag: item.tags[i], posts: [item]});
+        //     }
+        //   });
+        // }
+
+        console.log(categorieslist);
+
+        if (indexDefiner == -1) {
+          categorieslist.push({
+            tag: item.tags[i],
+            posts: [item]
+          });
+        } else {
+          categorieslist[indexDefiner].posts.push(item);
         }
-      });
+
+        break;
+        i++;
+      } // });
+
     });
+    console.log(categorieslist);
     const asc = categorieslist.sort((a, b) => {
       return b.posts.length - a.posts.length;
     });
@@ -6652,7 +6621,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */   "BlogProvider": () => (/* binding */ BlogProvider)
 /* harmony export */ });
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
-/* harmony import */ var _Reducer_BlogReducer__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../Reducer/BlogReducer */ "./src/Reducer/BlogReducer.js");
+/* harmony import */ var _reducers_BlogReducer__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../reducers/BlogReducer */ "./src/reducers/BlogReducer.js");
 /* harmony import */ var axios__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! axios */ "./node_modules/axios/index.js");
 /* harmony import */ var axios__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(axios__WEBPACK_IMPORTED_MODULE_2__);
 
@@ -6666,7 +6635,7 @@ const BlogContext = /*#__PURE__*/(0,react__WEBPACK_IMPORTED_MODULE_0__.createCon
 const BlogProvider = ({
   children
 }) => {
-  const [state, dispatch] = (0,react__WEBPACK_IMPORTED_MODULE_0__.useReducer)(_Reducer_BlogReducer__WEBPACK_IMPORTED_MODULE_1__["default"], initialState);
+  const [state, dispatch] = (0,react__WEBPACK_IMPORTED_MODULE_0__.useReducer)(_reducers_BlogReducer__WEBPACK_IMPORTED_MODULE_1__["default"], initialState);
 
   async function getBlogs() {
     const data = await axios__WEBPACK_IMPORTED_MODULE_2___default().get("/api/blogs").then(res => {
@@ -6709,6 +6678,45 @@ const BlogProvider = ({
     }
   }, " ", children);
 };
+
+/***/ }),
+
+/***/ "./src/reducers/BlogReducer.js":
+/*!*************************************!*\
+  !*** ./src/reducers/BlogReducer.js ***!
+  \*************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ((state, action) => {
+  switch (action.type) {
+    case 'BLOGUPDATE_SUCCESS':
+    case 'BLOGSAVE_SUCCESS':
+    case 'BLOG_LOADED':
+      return { ...state,
+        blog: action.payload,
+        error: null
+      };
+
+    case 'BLOGS_LOADED':
+    case 'BLOG_LOADED':
+      return { ...state,
+        blogs: action.payload
+      };
+
+    case 'CLEAR_ERROR':
+      return { ...state,
+        error: null
+      };
+
+    default:
+      return state;
+  }
+});
 
 /***/ }),
 
