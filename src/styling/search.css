@@ -13,12 +13,12 @@
 .h4,
 .h5,
 .h6 {
-  font-family: "Poppins", sans-serif;
+  font-family: "Ubuntu", sans-serif;
 }
 
 body {
   background: #f0f7ff;
-  font-family: "Poppins", sans-serif;
+  font-family: "Ubuntu", sans-serif;
 }
 
 .main-search {
@@ -52,7 +52,7 @@ body {
 
 .search-results .business-formation-outer .tab-sec-inner-heading,
 .search-results .business-formation-outer .tab-sec-main-paragraph {
-  font-family: "Poppins", sans-serif;
+  font-family: "Ubuntu", sans-serif;
 }
 
 .search-results .business-formation-outer span.info-sec-main {

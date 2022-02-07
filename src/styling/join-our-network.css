@@ -22,7 +22,7 @@
 }
 
 p {
-  font-family: "Poppins", sans-serif;
+  font-family: "Ubuntu", sans-serif;
 }
 
 body {
@@ -99,7 +99,7 @@ body {
 
 .network-form form .form-control {
   padding: 14px 12px;
-  font-family: "Poppins", sans-serif;
+  font-family: "Ubuntu", sans-serif;
   color: #495057;
 }
 
@@ -123,7 +123,7 @@ body {
 
 .network-form form .form-check-label {
   font-weight: 400;
-  font-family: "Poppins", sans-serif;
+  font-family: "Ubuntu", sans-serif;
   margin-left: 30px;
 }
 
@@ -139,7 +139,7 @@ body {
 
 .network-form form .form-submit-btn {
   background: linear-gradient(135deg, #395f8c 0%, #305888 100%);
-  font-family: "Poppins", sans-serif;
+  font-family: "Ubuntu", sans-serif;
   padding: 12px 20px;
   min-width: 400px;
   transition: opacity 0.3s ease;

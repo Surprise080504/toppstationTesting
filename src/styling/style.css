@@ -317,7 +317,7 @@ img.popular-post-img {
 .search-article-block input[type="text"] {
   border: 1px solid #ffffff;
   padding: 10px 260px 10px 15px;
-  font-family: "Poppins", sans-serif;
+  font-family: "Ubuntu", sans-serif;
   font-size: 16px;
   line-height: 24px;
   border-radius: 5px;
@@ -532,7 +532,7 @@ a.tags-sec-btn {
   color: #fff;
   text-decoration: none;
   border-radius: 4px;
-  font-family: "Poppins", sans-serif;
+  font-family: "Ubuntu", sans-serif;
   font-size: 10px;
   line-height: 24px;
   font-weight: normal;
@@ -777,7 +777,7 @@ a.travel-btn {
   text-decoration: none;
   border-radius: 4px;
   padding: 0px 20px;
-  font-family: "Poppins", sans-serif;
+  font-family: "Ubuntu", sans-serif;
   font-style: normal;
   font-weight: normal;
   font-size: 14px;
@@ -794,7 +794,7 @@ a.travel-btn:hover {
 .search-article-block input[type="text"] {
   border: 1px solid #ffffff;
   padding: 10px 60px 10px 15px;
-  font-family: "Poppins", sans-serif;
+  font-family: "Ubuntu", sans-serif;
   font-size: 16px;
   line-height: 24px;
   border-radius: 5px;
