@@ -621,7 +621,7 @@ const Wrapper = (props) => {
                 href="mailto:?&subject=Enabling Entrepreneurs worldwide&body=https://www.toppstation.com"
                 className="d-flex align-items-center justify-content-center"
               >
-                <img src="./images/gmail.svg" alt="Youtube" />
+                <img src="./images/gmail.svg" alt="Gmail" />
               </a>
             </div>
             <div className="header-chat-btn d-none d-md-block">

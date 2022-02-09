@@ -2657,29 +2657,35 @@ const Blog = props => {
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
     className: "social-icons__wrapper d-flex align-items-center justify-content-start justify-content-md-end gap-3"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("a", {
-    href: "#",
+    href: `https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Ftoppstation.com%2Fblog%${blog._id}`,
     className: "d-flex align-items-center justify-content-start social-icon__wrapper rounded-circle p-2 bg-white"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("img", {
-    src: "images/facebook.png",
+    src: "./images/facebook.svg",
     alt: "Facebook"
   })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("a", {
-    href: "#",
+    href: `https://twitter.com/intent/tweet?url=https%3A%2F%2Ftoppstation.com%2Fblog%2F${blog._id}&text=${blog.title}`,
     className: "d-flex align-items-center justify-content-start social-icon__wrapper rounded-circle p-2 bg-white"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("img", {
-    src: "images/twitter.png",
+    src: "./images/twitter.svg",
     alt: "Twitter"
   })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("a", {
-    href: "#",
+    href: `http://www.linkedin.com/shareArticle?mini=true&url=https%3A%2F%2Ftoppstation.com%2Fblog%2F${blog._id}&text=${blog.title}`,
     className: "d-flex align-items-center justify-content-start social-icon__wrapper rounded-circle p-2 bg-white"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("img", {
-    src: "images/instagram.png",
-    alt: "Instagram"
+    src: "./images/linkedin.svg",
+    alt: "Linkedin"
   })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("a", {
-    href: "#",
+    href: `https://api.whatsapp.com/send?text=${blog.title}%0ahttps%3A%2F%2Ftoppstation.com%2Fblog%2F${blog._id}`,
     className: "d-flex align-items-center justify-content-start social-icon__wrapper rounded-circle p-2 bg-white"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("img", {
-    src: "images/youtube.png",
-    alt: "Youtube"
+    src: "./images/whatsapp.svg",
+    alt: "Whatsapp"
+  })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("a", {
+    href: `mailto:?&subject=${blog.title}&body=${blog.description}`,
+    className: "d-flex align-items-center justify-content-start social-icon__wrapper rounded-circle p-2 bg-white"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("img", {
+    src: "./images/gmail.svg",
+    alt: "Gmail"
   }))))))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("section", {
     className: "blog-data bg-white"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
@@ -6539,7 +6545,7 @@ const Wrapper = props => {
     className: "d-flex align-items-center justify-content-center"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("img", {
     src: "./images/gmail.svg",
-    alt: "Youtube"
+    alt: "Gmail"
   }))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
     className: "header-chat-btn d-none d-md-block"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("a", {

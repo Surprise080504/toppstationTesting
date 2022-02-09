@@ -90,29 +90,36 @@ const Blog = (props) => {
             <div className="col-12 col-md-6">
               <div className="social-icons__wrapper d-flex align-items-center justify-content-start justify-content-md-end gap-3">
                 <a
-                  href="#"
+                  href={`https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Ftoppstation.com%2Fblog%${blog._id}`}
                   className="d-flex align-items-center justify-content-start social-icon__wrapper rounded-circle p-2 bg-white"
                 >
-                  <img src="images/facebook.png" alt="Facebook" />
+                  <img src="./images/facebook.svg" alt="Facebook" />
                 </a>
                 <a
-                  href="#"
+                  href={`https://twitter.com/intent/tweet?url=https%3A%2F%2Ftoppstation.com%2Fblog%2F${blog._id}&text=${blog.title}`}
                   className="d-flex align-items-center justify-content-start social-icon__wrapper rounded-circle p-2 bg-white"
                 >
-                  <img src="images/twitter.png" alt="Twitter" />
+                  <img src="./images/twitter.svg" alt="Twitter" />
                 </a>
                 <a
-                  href="#"
+                  href={`http://www.linkedin.com/shareArticle?mini=true&url=https%3A%2F%2Ftoppstation.com%2Fblog%2F${blog._id}&text=${blog.title}`}
                   className="d-flex align-items-center justify-content-start social-icon__wrapper rounded-circle p-2 bg-white"
                 >
-                  <img src="images/instagram.png" alt="Instagram" />
+                  <img src="./images/linkedin.svg" alt="Linkedin" />
                 </a>
                 <a
-                  href="#"
+                  href={`https://api.whatsapp.com/send?text=${blog.title}%0ahttps%3A%2F%2Ftoppstation.com%2Fblog%2F${blog._id}`}
                   className="d-flex align-items-center justify-content-start social-icon__wrapper rounded-circle p-2 bg-white"
                 >
-                  <img src="images/youtube.png" alt="Youtube" />
+                  <img src="./images/whatsapp.svg" alt="Whatsapp" />
                 </a>
+                <a
+                  href={`mailto:?&subject=${blog.title}&body=${blog.description}`}
+                  className="d-flex align-items-center justify-content-start social-icon__wrapper rounded-circle p-2 bg-white"
+                >
+                  <img src="./images/gmail.svg" alt="Gmail" />
+                </a>
+
               </div>
             </div>
           </div>
