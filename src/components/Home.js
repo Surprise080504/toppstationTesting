@@ -52,24 +52,10 @@ const Home = (props) => {
 
   const createCategories = (list) => {
     let categorieslist = [];
-    // let indexesList = [];
     list.forEach(item => {
-        // item.tags.forEach((tag) => {
           let i = 0;
             while (i < item.tags.length){
               let indexDefiner = findInCategories(categorieslist, item.tags[i]);
-              // if(item.visibility){
-              //   console.log(categorieslist, item.tags[i])
-              //   if(categorieslist.length)
-              //   categorieslist.forEach((cat, index) => {
-              //     if(cat.tags.indexOf(item.tags[i]) != -1) {
-              //       categorieslist[index].posts.push(item)
-              //     } else { 
-              //       categorieslist.push({tag: item.tags[i], posts: [item]});
-              //     }
-              //   });
-              // }
-
               console.log(categorieslist)
                 if(indexDefiner == -1){
                     categorieslist.push({tag: item.tags[i], posts: [item]});
@@ -79,7 +65,6 @@ const Home = (props) => {
                 break;
               i ++;
             }
-        // });
     });
 
     console.log(categorieslist)

@@ -597,25 +597,31 @@ const Wrapper = (props) => {
                 href="#"
                 className="d-flex align-items-center justify-content-center"
               >
-                <img src="./images/fb.svg" alt="Facebook" />
+                <img src="./images/facebook.svg" alt="Facebook" />
               </a>
               <a
                 href="#"
                 className="d-flex align-items-center justify-content-center"
               >
-                <img src="./images/insta.svg" alt="Instagram" />
+                <img src="./images/twitter.svg" alt="Instagram" />
               </a>
               <a
                 href="#"
                 className="d-flex align-items-center justify-content-center"
               >
-                <img src="./images/twitter.svg" alt="Twitter" />
+                <img src="./images/linkedin.svg" alt="Twitter" />
               </a>
               <a
                 href="#"
                 className="d-flex align-items-center justify-content-center"
               >
-                <img src="./images/youtube.svg" alt="Youtube" />
+                <img src="./images/whatsapp.svg" alt="Whatsapp" />
+              </a>
+              <a
+                href="#"
+                className="d-flex align-items-center justify-content-center"
+              >
+                <img src="./images/gmail.svg" alt="Youtube" />
               </a>
             </div>
             <div className="header-chat-btn d-none d-md-block">
