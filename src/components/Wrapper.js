@@ -594,31 +594,31 @@ const Wrapper = (props) => {
             </div>
             <div className="socials-container  d-flex align-items-center gap-2 gap-lg-3 w-50">
               <a
-                href="#"
+                href="https://www.facebook.com/sharer/sharer.php?u=https://www.toppstation.com"
                 className="d-flex align-items-center justify-content-center"
               >
                 <img src="./images/facebook.svg" alt="Facebook" />
               </a>
               <a
-                href="#"
+                href="https://twitter.com/intent/tweet?url=https://www.toppstation.com&text=Join Toppstation today to have access to our latest tweets."
                 className="d-flex align-items-center justify-content-center"
               >
                 <img src="./images/twitter.svg" alt="Instagram" />
               </a>
               <a
-                href="#"
+                href="https://www.linkedin.com/shareArticle?mini=true&url=https://www.toppstation.com&title=Kimbocorp - Toppstation&summary=Discover benefits of building a business from a pro-business environment, including how tax incentives, rule of law, connectivity to other markets, strategic location and skilled workforce benefit you regardless where you are.&source="
                 className="d-flex align-items-center justify-content-center"
               >
                 <img src="./images/linkedin.svg" alt="Twitter" />
               </a>
               <a
-                href="#"
+                href="https://api.whatsapp.com/send?text=Join Toppstation today to have access to our latest news.%0ahttps://www.toppstation.com"
                 className="d-flex align-items-center justify-content-center"
               >
                 <img src="./images/whatsapp.svg" alt="Whatsapp" />
               </a>
               <a
-                href="#"
+                href="mailto:?&subject=Enabling Entrepreneurs worldwide&body=https://www.toppstation.com"
                 className="d-flex align-items-center justify-content-center"
               >
                 <img src="./images/gmail.svg" alt="Youtube" />
